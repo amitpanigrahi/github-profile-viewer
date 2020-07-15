@@ -1,0 +1,29 @@
+.wrapper {
+  padding: 24px 0;
+  border-bottom: 1px solid #e1e4e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.repoName {
+  color: #0366d6;
+  margin: 0 0 10px;
+  font-weight: bold;
+  display: flex;
+  word-break: break-all;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  h3 {
+    margin: 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      border-color: #0366d6;
+    }
+  }
+}
+.tags {
+  display: flex;
+  font-size: 0.750rem;
+  margin-top: 5px;
+}

@@ -1,0 +1,23 @@
+.userImageWrapper {
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  max-height: 280px;
+  max-width: 280px;
+  margin: 0 auto 10px;
+  img {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 767px) {
+  .userImageWrapper {
+    max-height: 140px;
+    max-width: 140px;
+  }
+}

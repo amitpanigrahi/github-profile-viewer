@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  border-bottom: 1px solid #e1e4e8;
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  background: #fff;
+  justify-content: flex-start;
+}
+
+.tab {
+  padding: 15px 3vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(209,213,218,0);
+}
+.tabActive {
+  font-weight: bold;
+  border-color: #f9826c;
+}
+.repoCount {
+  margin-left: 1vw;
+  display: inline-block;
+  min-width: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #24292e;
+  text-align: center;
+  background-color: rgba(209,213,218,.5);
+  border: 1px solid transparent;
+  border-radius: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    justify-content: space-around;
+  }
+}

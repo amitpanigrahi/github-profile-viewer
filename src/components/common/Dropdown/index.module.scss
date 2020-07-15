@@ -1,0 +1,68 @@
+.wrapper,
+.box {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+.selectBox {
+  position: relative;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 15px;
+  height: 100%;
+  align-items: center;
+  outline: 0;
+  border: 1px solid rgba(27, 31, 35, .15);
+  background-color: #fafbfc;
+  box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+  border-radius: 5px;
+  color: #000;
+}
+.selectArrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.dropDown {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: auto;
+  max-height: 480px;
+  margin: 8px 0 16px;
+  font-size: 12px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  box-shadow: 0 8px 24px rgba(149,157,165,.2);
+}
+.dropDownList {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 6px 16px;
+  overflow: hidden;
+  color: #24292e;
+  text-align: left;
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  border-bottom: 1px solid #eaecef;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    background-color: aliceblue;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .selectBox {
+    min-height: 35px;
+    margin-top: 10px;
+  }
+}
